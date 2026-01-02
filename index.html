@@ -4,34 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jackson | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Background animé -->
+  <div class="particles-background"></div>
 
   <!-- HERO SECTION -->
   <header class="hero">
     <div class="hero-content">
-      <h1>Jackson Rognard-Anoma</h1>
-      <p class="subtitle">A Computer Science Student & Software Developer specializing in building high-performance, scalable web solutions. I focus on delivering efficient software and exceptional user experiences.</p>
+      <h1 class="typing-animation">Jackson Rognard-Anoma</h1>
+      <p class="subtitle">Computer Science Student & Software Developer specializing in web technologies and interactive applications.</p>
       <div class="hero-links">
-        <a href="#contact">HIRE ME</a>
-        <a href="https://github.com/jajackson69" target="_blank">GitHub</a>
-        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#contact" class="hire-me-btn">
+          <i class="fas fa-paper-plane"></i> HIRE ME
+        </a>
+        <a href="https://github.com/jajackson69" target="_blank" class="github-btn">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="#" target="_blank" class="linkedin-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
       </div>
     </div>
-    <div class="scroll-down">SCROLL DOWN</div>
+    <div class="scroll-down">
+      <span>SCROLL DOWN</span>
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </div>
   </header>
 
   <!-- MAIN CONTENT -->
   <main>
     <!-- PROJECTS SECTION -->
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
+    <section class="projects fade-in-section" id="projects">
+      <div class="section-header">
+        <h2><span class="section-number">01</span>Projects</h2>
+        <div class="title-line"></div>
+      </div>
       <div class="project-grid">
         <div class="project-card">
+          <div class="project-badge">Featured</div>
           <h3>The Lost Elements</h3>
-          <p>Magic-based game with gameplay mechanics and interactive actions.</p>
+          <p class="project-description">Magic-based game with gameplay mechanics and interactive actions.</p>
           <div class="project-video">
             <iframe
               src="https://www.youtube.com/embed/vT_qkSuPNvk?modestbranding=1&rel=0&showinfo=0"
@@ -41,82 +60,130 @@
               allowfullscreen>
             </iframe>
           </div>
+          <div class="project-tech">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>3D Graphics</span>
+          </div>
           <div class="project-links">
-            <a href="https://www.youtube.com/watch?v=vT_qkSuPNvk" target="_blank">Demo</a>
-            <a href="#" target="_blank">GitHub</a>
+            <a href="https://www.youtube.com/watch?v=vT_qkSuPNvk" target="_blank" class="demo-btn">
+              <i class="fas fa-play-circle"></i> Live Demo
+            </a>
+            <a href="#" target="_blank" class="github-btn">
+              <i class="fab fa-github"></i> Source Code
+            </a>
           </div>
         </div>
-        <!-- Ajoute ici tes autres projets -->
+        
+        <!-- Project card 2 (exemple) -->
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p class="project-description">Responsive portfolio with modern animations and interactive elements.</p>
+          <div class="project-image-placeholder">
+            <div class="placeholder-content">
+              <i class="fas fa-code"></i>
+              <p>Web Development</p>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="demo-btn">
+              <i class="fas fa-external-link-alt"></i> View Project
+            </a>
+            <a href="#" target="_blank" class="github-btn">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- EXPERIENCE SECTION (Scrolling Effect) -->
-    <section class="experience" id="experience">
-      <h2>Experience</h2>
+    <section class="experience fade-in-section" id="experience">
+      <div class="section-header">
+        <h2><span class="section-number">02</span>Experience</h2>
+        <div class="title-line"></div>
+      </div>
       <div class="experience-container">
         <div class="experience-track">
           <!-- Carte d'expérience 1 -->
           <div class="exp-card">
-            <h3>Software Developer Intern</h3>
+            <div class="exp-header">
+              <h3>Software Developer Intern</h3>
+              <div class="exp-date">Summer 2023</div>
+            </div>
             <p class="company">Tech Solutions Inc.</p>
-            <p class="date">Summer 2023</p>
             <ul>
-              <li>Developed a full‑stack web app with React & Node.js</li>
-              <li>Optimized database queries, improving performance by 30%</li>
-              <li>Collaborated using Agile/Scrum methodologies</li>
+              <li><i class="fas fa-check-circle"></i> Developed a full‑stack web app with React & Node.js</li>
+              <li><i class="fas fa-check-circle"></i> Optimized database queries, improving performance by 30%</li>
+              <li><i class="fas fa-check-circle"></i> Collaborated using Agile/Scrum methodologies</li>
             </ul>
           </div>
           <!-- Carte d'expérience 2 -->
           <div class="exp-card">
-            <h3>Freelance Web Developer</h3>
+            <div class="exp-header">
+              <h3>Freelance Web Developer</h3>
+              <div class="exp-date">2022 – Present</div>
+            </div>
             <p class="company">Self‑Employed</p>
-            <p class="date">2022 – Present</p>
             <ul>
-              <li>Built responsive websites for small businesses</li>
-              <li>Implemented SEO best practices, increasing client traffic</li>
-              <li>Provided ongoing maintenance and support</li>
+              <li><i class="fas fa-check-circle"></i> Built responsive websites for small businesses</li>
+              <li><i class="fas fa-check-circle"></i> Implemented SEO best practices, increasing client traffic</li>
+              <li><i class="fas fa-check-circle"></i> Provided ongoing maintenance and support</li>
             </ul>
           </div>
           <!-- Carte d'expérience 3 -->
           <div class="exp-card">
-            <h3>CS Teaching Assistant</h3>
+            <div class="exp-header">
+              <h3>CS Teaching Assistant</h3>
+              <div class="exp-date">Fall 2022</div>
+            </div>
             <p class="company">University of Example</p>
-            <p class="date">Fall 2022</p>
             <ul>
-              <li>Assisted students in introductory programming courses</li>
-              <li>Held office hours and reviewed code assignments</li>
-              <li>Created tutorial materials for Java & Python</li>
+              <li><i class="fas fa-check-circle"></i> Assisted students in introductory programming courses</li>
+              <li><i class="fas fa-check-circle"></i> Held office hours and reviewed code assignments</li>
+              <li><i class="fas fa-check-circle"></i> Created tutorial materials for Java & Python</li>
             </ul>
           </div>
           <!-- Duplication pour l'effet de boucle infini -->
           <div class="exp-card">
-            <h3>Software Developer Intern</h3>
+            <div class="exp-header">
+              <h3>Software Developer Intern</h3>
+              <div class="exp-date">Summer 2023</div>
+            </div>
             <p class="company">Tech Solutions Inc.</p>
-            <p class="date">Summer 2023</p>
             <ul>
-              <li>Developed a full‑stack web app with React & Node.js</li>
-              <li>Optimized database queries, improving performance by 30%</li>
-              <li>Collaborated using Agile/Scrum methodologies</li>
+              <li><i class="fas fa-check-circle"></i> Developed a full‑stack web app with React & Node.js</li>
+              <li><i class="fas fa-check-circle"></i> Optimized database queries, improving performance by 30%</li>
+              <li><i class="fas fa-check-circle"></i> Collaborated using Agile/Scrum methodologies</li>
             </ul>
           </div>
           <div class="exp-card">
-            <h3>Freelance Web Developer</h3>
+            <div class="exp-header">
+              <h3>Freelance Web Developer</h3>
+              <div class="exp-date">2022 – Present</div>
+            </div>
             <p class="company">Self‑Employed</p>
-            <p class="date">2022 – Present</p>
             <ul>
-              <li>Built responsive websites for small businesses</li>
-              <li>Implemented SEO best practices, increasing client traffic</li>
-              <li>Provided ongoing maintenance and support</li>
+              <li><i class="fas fa-check-circle"></i> Built responsive websites for small businesses</li>
+              <li><i class="fas fa-check-circle"></i> Implemented SEO best practices, increasing client traffic</li>
+              <li><i class="fas fa-check-circle"></i> Provided ongoing maintenance and support</li>
             </ul>
           </div>
           <div class="exp-card">
-            <h3>CS Teaching Assistant</h3>
+            <div class="exp-header">
+              <h3>CS Teaching Assistant</h3>
+              <div class="exp-date">Fall 2022</div>
+            </div>
             <p class="company">University of Example</p>
-            <p class="date">Fall 2022</p>
             <ul>
-              <li>Assisted students in introductory programming courses</li>
-              <li>Held office hours and reviewed code assignments</li>
-              <li>Created tutorial materials for Java & Python</li>
+              <li><i class="fas fa-check-circle"></i> Assisted students in introductory programming courses</li>
+              <li><i class="fas fa-check-circle"></i> Held office hours and reviewed code assignments</li>
+              <li><i class="fas fa-check-circle"></i> Created tutorial materials for Java & Python</li>
             </ul>
           </div>
         </div>
@@ -124,28 +191,153 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="skills" id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span>Java</span>
-        <span>JavaScript</span>
-        <span>Node.js</span>
-        <span>Python</span>
-        <span>C#</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Lua</span>
+    <section class="skills fade-in-section" id="skills">
+      <div class="section-header">
+        <h2><span class="section-number">03</span>Skills</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="skills-categories">
+        <div class="category">
+          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">
+              <i class="fab fa-html5"></i> HTML5
+            </span>
+            <span class="skill-tag">
+              <i class="fab fa-css3-alt"></i> CSS3
+            </span>
+            <span class="skill-tag">
+              <i class="fab fa-js"></i> JavaScript
+            </span>
+            <span class="skill-tag">
+              <i class="fab fa-react"></i> React
+            </span>
+          </div>
+        </div>
+        
+        <div class="category">
+          <h3><i class="fas fa-server"></i> Backend & Databases</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">
+              <i class="fab fa-node-js"></i> Node.js
+            </span>
+            <span class="skill-tag">
+              <i class="fab fa-java"></i> Java
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-database"></i> SQL
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-elephant"></i> PostgreSQL
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-tools"></i> PGAdmin4
+            </span>
+          </div>
+        </div>
+        
+        <div class="category">
+          <h3><i class="fas fa-gamepad"></i> Game Dev & Scripting</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">
+              <i class="fas fa-cube"></i> Unity
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-cogs"></i> C#
+            </span>
+            <span class="skill-tag">
+              <i class="fab fa-java"></i> Java
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-code"></i> Luau
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-terminal"></i> Lua
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-paint-brush"></i> Blender
+            </span>
+          </div>
+        </div>
+        
+        <div class="category">
+          <h3><i class="fas fa-language"></i> Languages</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">
+              <i class="fas fa-globe"></i> English
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-globe"></i> French
+            </span>
+            <span class="skill-tag">
+              <i class="fas fa-globe"></i> Spanish
+            </span>
+          </div>
+        </div>
       </div>
     </section>
-
+    
     <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <p>Email: jacksonrognardanoma@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/jajackson69" target="_blank">github.com/jajackson69</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/tonpseudo</a></p>
+    <section class="contact fade-in-section" id="contact">
+      <div class="section-header">
+        <h2><span class="section-number">04</span>Contact</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>jacksonrognardanoma@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/jajackson69" target="_blank">github.com/jajackson69</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="#" target="_blank">linkedin.com/in/jackson</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Send me a message</h3>
+          <form id="messageForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
+  <footer>
+    <p>© 2026 Jackson Rognard-Anoma. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
