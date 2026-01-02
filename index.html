@@ -3,43 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jackson RA | Portfolio</title>
+  <title>Jackson | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Jackson RA </h1>
-    <p>Computer Science Student | Software Developer</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Jackson Rognard-Anoma</h1>
+      <p class="subtitle">A Computer Science Student & Software Developer specializing in building high-performance, scalable web solutions. I focus on delivering efficient software and exceptional user experiences.</p>
+      <div class="hero-links">
+        <a href="#contact">HIRE ME</a>
+        <a href="https://github.com/jajackson69" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <div class="scroll-down">SCROLL DOWN</div>
   </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>The Lost Elements</h3>
+          <p>Magic-based game with gameplay mechanics and interactive actions.</p>
+          <div class="project-video">
+            <iframe
+              src="https://www.youtube.com/embed/vT_qkSuPNvk?modestbranding=1&rel=0&showinfo=0"
+              title="The Lost Elements Demo"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=vT_qkSuPNvk" target="_blank">Demo</a>
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <!-- Ajoute ici tes autres projets -->
+      </div>
+    </section>
 
-    <div class="project">
-      <h3>The Lost Elements</h3>
-      <p>Magic-based game project.</p>
-      <a href="#">Demo video</a> ·
-      <a href="#">GitHub</a>
-    </div>
+    <!-- EXPERIENCE SECTION (Scrolling Effect) -->
+    <section class="experience" id="experience">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <div class="experience-track">
+          <!-- Carte d'expérience 1 -->
+          <div class="exp-card">
+            <h3>Software Developer Intern</h3>
+            <p class="company">Tech Solutions Inc.</p>
+            <p class="date">Summer 2023</p>
+            <ul>
+              <li>Developed a full‑stack web app with React & Node.js</li>
+              <li>Optimized database queries, improving performance by 30%</li>
+              <li>Collaborated using Agile/Scrum methodologies</li>
+            </ul>
+          </div>
+          <!-- Carte d'expérience 2 -->
+          <div class="exp-card">
+            <h3>Freelance Web Developer</h3>
+            <p class="company">Self‑Employed</p>
+            <p class="date">2022 – Present</p>
+            <ul>
+              <li>Built responsive websites for small businesses</li>
+              <li>Implemented SEO best practices, increasing client traffic</li>
+              <li>Provided ongoing maintenance and support</li>
+            </ul>
+          </div>
+          <!-- Carte d'expérience 3 -->
+          <div class="exp-card">
+            <h3>CS Teaching Assistant</h3>
+            <p class="company">University of Example</p>
+            <p class="date">Fall 2022</p>
+            <ul>
+              <li>Assisted students in introductory programming courses</li>
+              <li>Held office hours and reviewed code assignments</li>
+              <li>Created tutorial materials for Java & Python</li>
+            </ul>
+          </div>
+          <!-- Duplication pour l'effet de boucle infini -->
+          <div class="exp-card">
+            <h3>Software Developer Intern</h3>
+            <p class="company">Tech Solutions Inc.</p>
+            <p class="date">Summer 2023</p>
+            <ul>
+              <li>Developed a full‑stack web app with React & Node.js</li>
+              <li>Optimized database queries, improving performance by 30%</li>
+              <li>Collaborated using Agile/Scrum methodologies</li>
+            </ul>
+          </div>
+          <div class="exp-card">
+            <h3>Freelance Web Developer</h3>
+            <p class="company">Self‑Employed</p>
+            <p class="date">2022 – Present</p>
+            <ul>
+              <li>Built responsive websites for small businesses</li>
+              <li>Implemented SEO best practices, increasing client traffic</li>
+              <li>Provided ongoing maintenance and support</li>
+            </ul>
+          </div>
+          <div class="exp-card">
+            <h3>CS Teaching Assistant</h3>
+            <p class="company">University of Example</p>
+            <p class="date">Fall 2022</p>
+            <ul>
+              <li>Assisted students in introductory programming courses</li>
+              <li>Held office hours and reviewed code assignments</li>
+              <li>Created tutorial materials for Java & Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </section>
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>Python</span>
+        <span>C#</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Lua</span>
+      </div>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>Java, JavaScript, Node.js, Python, C#, HTML, CSS</p>
-  </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>Email: jacksonrognardanoma@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/jajackson69" target="_blank">github.com/jajackson69</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/tonpseudo</a></p>
+    </section>
+  </main>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-  </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
