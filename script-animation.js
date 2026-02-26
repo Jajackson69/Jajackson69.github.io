@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Particles on hover
   document.addEventListener('mousemove', function(e) {
-    if (Math.random() > 0.7) { // 30% de chance
+    if (Math.random() > 0.7) { // 30% chance
       createParticle(e.clientX, e.clientY);
     }
   });
@@ -77,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Progressive Scroll
   const progressBar = document.createElement('div');
   progressBar.style.cssText = `
-    position: fixed;
     top: 0;
     left: 0;
     width: 0%;

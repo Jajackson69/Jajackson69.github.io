@@ -19,8 +19,7 @@
     <header class="hero">
         <div class="hero-content">
             <h1 class="typing-animation">Jackson Rognard-Anoma</h1>
-            <p class="subtitle">Computer Science Student & Software Developer specializing in web technologies and
-                interactive applications.</p>
+            <p class="subtitle">Computer Science Student & Junior Software Developer</p>
             <div class="hero-links">
                 <a href="#contact" class="hire-me-btn">
                     <i class="fas fa-paper-plane"></i> HIRE ME
@@ -63,10 +62,15 @@
                         <span>3D Graphics</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://www.youtube.com/watch?v=vT_qkSuPNvk" target="_blank" class="demo-btn">
-                            <i class="fas fa-play-circle"></i> Live Demo
+                        <a href="https://jajackson69.itch.io/the-lost-elements" target="_blank" class="play-btn">
+                            <i class="fas fa-gamepad"></i> Play Game
                         </a>
-                        <a href="#" target="_blank" class="github-btn">
+
+                        <a href="https://www.youtube.com/watch?v=ysvUqPRIBcU" target="_blank" class="demo-btn">
+                            <i class="fas fa-play-circle"></i> Video Demo
+                        </a>
+
+                        <a href="https://github.com/Jajackson69/TheLostElements" target="_blank" class="github-btn">
                             <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
@@ -184,7 +188,7 @@
                         </ul>
                     </div>
                     <!-- Card 6 -->
-                  <div class="exp-card">
+                    <div class="exp-card">
                         <div class="exp-header">
                             <h3>FullStack Developer Intern</h3>
                             <div class="exp-date">Summer 2023</div>
@@ -224,12 +228,24 @@
                         <span class="skill-tag">
                             <i class="fab fa-react"></i> React
                         </span>
+                        <span class="skill-tag">
+                            <i class="fab fa-code"></i> TypeScript
+                        </span>
+                        <span class="skill-tag">
+                            <i class="fas fa-bolt"></i> Next.js
+                        </span>
                     </div>
                 </div>
 
                 <div class="category">
                     <h3><i class="fas fa-server"></i> Backend & Databases</h3>
                     <div class="skills-grid">
+                        <span class="skill-tag">
+                            <i class="fab fa-python"></i> Python
+                        </span>
+                        <span class="skill-tag">
+                            <i class="fas fa-paper-plane"></i> Postman
+                        </span>
                         <span class="skill-tag">
                             <i class="fab fa-node-js"></i> Node.js
                         </span>
@@ -249,6 +265,20 @@
                 </div>
 
                 <div class="category">
+                    <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">
+                        <i class="fab fa-git-alt"></i> Git
+                    </span>
+                    <span class="skill-tag">
+                        <i class="fab fa-git-alt"></i> Docker
+                    </span>
+                    <span class="skill-tag">
+                        <i class="fab fa-git-alt"></i> GitHub                    </span>
+                </div>
+                </div>
+
+                <div class="category">
                     <h3><i class="fas fa-gamepad"></i> Game Dev & Scripting</h3>
                     <div class="skills-grid">
                         <span class="skill-tag">
@@ -256,9 +286,6 @@
                         </span>
                         <span class="skill-tag">
                             <i class="fas fa-cogs"></i> C#
-                        </span>
-                        <span class="skill-tag">
-                            <i class="fab fa-java"></i> Java
                         </span>
                         <span class="skill-tag">
                             <i class="fas fa-code"></i> Luau
@@ -320,14 +347,21 @@
 
                 <div class="contact-form">
                     <h3>Send me a message</h3>
-                    <form id="messageForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <form id="contact-form">
+                        <input type="text" name="fi-sender-firstName" placeholder="First name" required />
+                        <input type="text" name="fi-sender-lastName" placeholder="Last name" required />
+                        <input type="email" name="fi-sender-email" placeholder="Email" required />
+                        <textarea name="fi-text-message" placeholder="Message" required></textarea>
+
+            
                         <button type="submit" class="submit-btn">
-                            <i class="fas fa-paper-plane"></i> Send Message
+                            <i class="fas fa-paper-plane"></i> Send
                         </button>
                     </form>
+
+                    <p id="form-result"></p>  
+                    <script src="https://forminit.com/sdk/v1/forminit.js"></script>
+                    <script src="contact.js"></script>
                 </div>
             </div>
         </section>
@@ -339,7 +373,12 @@
             <a href="#"><i class="fas fa-arrow-up"></i> Back to Top</a>
         </div>
     </footer>
+    <audio id="bg-music" loop>
+        <source src="LobbySound.mp3" type="audio/mpeg">
+    </audio>
 
+    <button id="music-toggle" class="music-btn">Music OFF 🔇</button>
+    <script src="music.js"></script>
     <script src="script.js"></script>
 </body>
 

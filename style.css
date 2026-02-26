@@ -909,6 +909,43 @@ footer p {
   color: #8b87ea;
 }
 
+.play-btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.play-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+}
+
+.input-error {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: red;
+}
+
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(79, 70, 229, 0.8);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
   .contact-content {
