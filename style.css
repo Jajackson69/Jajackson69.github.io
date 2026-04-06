@@ -585,7 +585,7 @@ main {
   display: flex;
   gap: 30px;
   width: max-content;
-  animation: scroll-horizontal 40s linear infinite;
+  animation: scroll-horizontal 25s linear infinite;
   will-change: transform;
 }
 
@@ -594,7 +594,7 @@ main {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-350px * 6 - 30px * 6));
+    transform: translateX(calc(-350px * 4 - 30px * 4));
   }
 }
 
@@ -1014,7 +1014,7 @@ footer p {
   
   @keyframes scroll-horizontal {
     100% {
-      transform: translateX(calc(-300px * 6 - 30px * 6));
+      transform: translateX(calc(-300px * 4 - 30px * 4));
     }
   }
 }
